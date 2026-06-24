@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eve | Illustration Portfolio</title>
+  <meta name="description" content="插画师 Eve 的作品集网站，展示出版、品牌、角色与个人创作。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="回到首页">
+      <span class="brand-mark"></span>
+      <span>Eve</span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#works">作品</a>
+      <a href="#about">简介</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <picture>
+        <source media="(max-width: 720px)" srcset="assets/hero-mobile.png">
+        <img class="hero-image" src="assets/hero.png" alt="一组温暖而精致的插画作品铺满画面">
+      </picture>
+      <div class="hero-copy">
+        <p class="eyebrow">Illustrator / Visual Storyteller</p>
+        <h1 id="hero-title">Eve</h1>
+        <p>以柔和色彩、细腻线条和叙事感构建画面，为出版、品牌、生活方式与儿童内容创作插画。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#works">查看作品</a>
+          <a class="button ghost" href="mailto:hello@example.com">预约合作</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-strip" aria-label="服务方向">
+      <span>Editorial</span>
+      <span>Book Cover</span>
+      <span>Character</span>
+      <span>Brand Visual</span>
+      <span>Pattern</span>
+    </section>
+
+    <section class="works-section" id="works" aria-labelledby="works-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected Works</p>
+          <h2 id="works-title">近期作品</h2>
+        </div>
+        <div class="filters" aria-label="作品分类">
+          <button class="filter is-active" type="button" data-filter="all">全部</button>
+          <button class="filter" type="button" data-filter="publishing">出版</button>
+          <button class="filter" type="button" data-filter="brand">品牌</button>
+          <button class="filter" type="button" data-filter="character">角色</button>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <article class="work-card" data-category="publishing">
+          <button class="work-button" type="button" data-title="风经过书页" data-year="2026" data-type="出版插画" data-image="assets/work-1.png">
+            <img src="assets/work-1.png" alt="风经过书页插画">
+            <span class="work-meta"><strong>风经过书页</strong><small>出版插画 / 2026</small></span>
+          </button>
+        </article>
+        <article class="work-card" data-category="brand">
+          <button class="work-button" type="button" data-title="午后花店" data-year="2026" data-type="品牌视觉" data-image="assets/work-2.png">
+            <img src="assets/work-2.png" alt="午后花店插画">
+            <span class="work-meta"><strong>午后花店</strong><small>品牌视觉 / 2026</small></span>
+          </button>
+        </article>
+        <article class="work-card" data-category="character">
+          <button class="work-button" type="button" data-title="海盐小队" data-year="2025" data-type="角色设定" data-image="assets/work-3.png">
+            <img src="assets/work-3.png" alt="海盐小队角色插画">
+            <span class="work-meta"><strong>海盐小队</strong><small>角色设定 / 2025</small></span>
+          </button>
+        </article>
+        <article class="work-card wide" data-category="brand">
+          <button class="work-button" type="button" data-title="月光市集" data-year="2025" data-type="活动主视觉" data-image="assets/work-4.png">
+            <img src="assets/work-4.png" alt="月光市集插画">
+            <span class="work-meta"><strong>月光市集</strong><small>活动主视觉 / 2025</small></span>
+          </button>
+        </article>
+        <article class="work-card" data-category="publishing">
+          <button class="work-button" type="button" data-title="云端来信" data-year="2024" data-type="封面设计" data-image="assets/work-5.png">
+            <img src="assets/work-5.png" alt="云端来信封面插画">
+            <span class="work-meta"><strong>云端来信</strong><small>封面设计 / 2024</small></span>
+          </button>
+        </article>
+        <article class="work-card" data-category="character">
+          <button class="work-button" type="button" data-title="岛上的朋友" data-year="2024" data-type="绘本角色" data-image="assets/work-6.png">
+            <img src="assets/work-6.png" alt="岛上的朋友插画">
+            <span class="work-meta"><strong>岛上的朋友</strong><small>绘本角色 / 2024</small></span>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-image">
+        <img src="assets/studio.png" alt="插画师工作台上的画稿、色卡和铅笔">
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">把故事画得可以被停留</h2>
+        <p>我关注日常里的情绪、植物、光影和人物关系。创作流程通常从文字拆解与气氛板开始，随后进入草图、色彩方案、精稿与交付延展。</p>
+        <dl class="facts">
+          <div><dt>合作方向</dt><dd>书籍封面、杂志内页、品牌视觉、包装、绘本与角色设定</dd></div>
+          <div><dt>交付形式</dt><dd>高分辨率插画、分层源文件、商业授权与延展素材</dd></div>
+          <div><dt>所在地</dt><dd>Shanghai / Remote</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">Commission</p>
+      <h2 id="contact-title">一起做一幅有记忆点的画</h2>
+      <p>项目档期、授权范围与报价可通过邮件沟通。也欢迎发送故事梗概、品牌资料或视觉参考。</p>
+      <a class="button primary" href="mailto:hello@example.com">hello@example.com</a>
+    </section>
+  </main>
+
+  <div class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+    <div class="lightbox-panel">
+      <button class="icon-button" type="button" data-close aria-label="关闭详情">×</button>
+      <img class="lightbox-image" src="assets/work-1.png" alt="">
+      <div class="lightbox-copy">
+        <p class="eyebrow lightbox-type">出版插画</p>
+        <h3 id="lightbox-title">风经过书页</h3>
+        <p class="lightbox-year">2026</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
